@@ -150,7 +150,7 @@ if __name__ == "__main__":
         adata = load_ST_file(dataset, config.fdim, config.k, config.radius)
         calculate_edge_weights(adata)
         print("saving")
-        adata.write(savepath + 'MAFN.h5ad')
+        adata.write(savepath + 'MorphST.h5ad')
         print("done")
         print(adata.X)
 
